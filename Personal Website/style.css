@@ -8,6 +8,13 @@ body{
     background-color: cyan;
 }
 
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 h1{
     color: white;
     background: linear-gradient(90deg, cyan, white, cyan);
@@ -50,11 +57,27 @@ h2:hover{
     align-items: center;    
 }
 
+.white-space{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sections{
     display: flex;
     flex-direction: row;
     align-items: center;
     }
+
+.sections2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: gradient-animation 4s linear infinite;
+    color: cyan;
+}
 
 p{
     transition: 1s;
@@ -112,7 +135,7 @@ a:hover{
 #red-window-header{
     width:100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     cursor: move;
     background-color: red;
     color: white;
@@ -152,15 +175,3 @@ a:hover{
     text-shadow: 0 0 35px white, 0 0 35px red;  
 }
 
-
-
-
-
-
-
-
-
-
-.webgl{
-    border: solid 5px cyan;
-}
